@@ -1,2 +1,0 @@
-# buscadorconJS
-buscador con JS
