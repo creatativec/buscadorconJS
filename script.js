@@ -8,10 +8,10 @@ if (busqueda == "" || busqueda == " ") {
 
   for (i = 0; i < palabras.length; i++) {
     busquedaSplit.forEach((index) => {
-      var palabrasIndex = palabras[i];
+      let palabrasIndex = palabras[i];
       let busquedaLength = index.length > 3;
-      let palabrasIndexStarts = palabrasIndex.startsWith(b);
-      let palabrasIndexIncludes = palabrasIndex.includes(b);
+      let palabrasIndexStarts = palabrasIndex.startsWith(index);
+      let palabrasIndexIncludes = palabrasIndex.includes(index);
       if (busquedaLength && palabrasIndexStarts) {
         document.write(`${pI}  <br>`);
       } else if (palabrasIndexStarts && palabrasIndexIncludes) {
