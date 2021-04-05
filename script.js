@@ -13,11 +13,10 @@ if (busqueda == "" || busqueda == " ") {
       let palabrasIndexStarts = palabrasIndex.startsWith(index);
       let palabrasIndexIncludes = palabrasIndex.includes(index);
       if (busquedaLength && palabrasIndexStarts) {
-        document.write(`${pI}  <br>`);
+        document.write(`${palabrasIndex}  <br>`);
       } else if (palabrasIndexStarts && palabrasIndexIncludes) {
-        document.write(`${pI}  <br>`);
+        document.write(`${palabrasIndex}  <br>`);
       }
     });
   }
 }
-
